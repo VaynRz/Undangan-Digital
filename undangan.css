@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    cursor: grab;
+    user-select: none;
+    touch-action: pan-x;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.halaman {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.halaman h1 {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: #333333;
+}
+
+/*Halaman 1*/
+.halaman1 {
+    background-color: #f5f0e8;
+    padding: 20px;
+}
+
+.kotak-undangan {
+    width: 75%;
+    max-width: 1000px;
+    min-height: 480px;
+
+    border: 2px solid #8a9a7b;
+    background-color: #fffdf8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.judul {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #718064;
+    margin-bottom: 20px;
+}
+
+.kotak-undangan h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    font-weight: normal;
+    color: #52634b;
+}
+
+.dan {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #718064;
+}
+
+.pemisah {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pemisah span {
+    width: 60px;
+    height: 1px;
+    background-color: #b49a72;
+}
+
+.tanggal {
+    margin-top: 30px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #718064;
+}
+
+/*Halaman 2*/
+.halaman2 {
+    background-color: #f5f0e8;
+    padding: 40px;
+}
+
+.kontainer-halaman2 {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.judul-halaman2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.judul-halaman2 p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #718064;
+}
+
+.judul-halaman2 span {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #b49a72;
+    margin: 15px auto 0;
+}
+
+.profil {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.profil-kiri {
+    top: 8%;
+    left: 3%;
+}
+
+.profil-kanan {
+    bottom: 8%;
+    right: 3%;
+}
+
+.foto-pengantin {
+    width: 380px;
+    height: 250px;
+    flex-shrink: 0;
+    padding: 5px;
+    border: 1px solid #8a9a7b;
+}
+
+.foto-pengantin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.identitas-pengantin {
+    text-align: center;
+    min-width: 220px;
+}
+
+.identitas-pengantin h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    font-weight: normal;
+    color: #52634b;
+    margin-bottom: 18px;
+}
+
+.identitas-pengantin .nama-ortu {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #52634b;
+    white-space: nowrap;
+}
+
+.simbol-tengah {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    color: #52634b;
+}
+
+/*Halaman 3*/
+.halaman3 {
+    background-color: #f5f0e8;
+    padding: 30px;
+}
+
+.detail-pernikahan {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.judul-detail {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #52634b;
+}
+
+.ornamen-detail {
+    width: 60px;
+    height: 1px;
+    background-color: #b49a72;
+    margin: 20px auto 30px;
+}
+
+.tanggal-pernikahan p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #718064;
+}
+
+.tanggal-pernikahan h2 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    color: #52634b;
+    line-height: 1.2;
+}
+
+.tanggal-pernikahan h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #52634b;
+}
+
+.pembatas-detail {
+    width: 280px;
+    height: 1px;
+    background-color: #d8cdb8;
+    margin: 25px auto;
+}
+
+.pembatas-kecil {
+    width: 35px;
+    height: 1px;
+    background-color: #b49a72;
+    margin: 18px auto;
+}
+
+.susunan-acara h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #52634b;
+    margin-bottom: 8px;
+}
+
+.susunan-acara p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #718064;
+}
+
+.lokasi-pernikahan h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #52634b;
+    margin-bottom: 8px;
+}
+
+.lokasi-pernikahan p {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #718064;
+    margin-bottom: 18px;
+}
+
+.tombol-lokasi {
+    background: transparent;
+    border: 1px solid #8a9a7b;
+    color: #52634b;
+    padding: 11px 28px;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol-lokasi:hover {
+    background-color: #52634b;
+    color: #fffdf8;
+}
+
+
+/*Pop Up Lokasi */
+.popup-peta {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-popup {
+    position: relative;
+    width: 650px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background-color: #fffdf8;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #8a9a7b;
+}
+
+.isi-popup h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #52634b;
+    margin-bottom: 20px;
+}
+
+.isi-popup img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.isi-popup p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #52634b;
+    margin-bottom: 20px;
+}
+
+.tutup-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 30px;
+    color: #52634b;
+    cursor: pointer;
+}
+
+.link-maps {
+    display: inline-block;
+    padding: 12px 25px;
+
+    background-color: #52634b;
+    color: white;
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.link-maps:hover {
+    background-color: #718064;
+}
+
+
+
+/*Halaman 4*/
+.halaman4 {
+    background-color: #f5f0e8;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.gallery-container {
+    position: relative;
+    width: 1100px;
+    height: 650px;
+    max-width: 100%;
+    max-height: 95%;
+    background-color: #fffdf8;
+    overflow: hidden;
+    border: 1px solid #e8dfd3;
+}
+
+.gallery-dekor {
+    position: absolute;
+    background-color: #f0e4d7;
+    opacity: 0.7;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.dekor-kiri {
+    width: 400px;
+    height: 500px;
+    left: -260px;
+    top: 80px;
+    transform: rotate(30deg);
+}
+
+.dekor-kanan {
+    width: 380px;
+    height: 450px;
+    right: -260px;
+    top: 50px;
+    transform: rotate(-25deg);
+}
+
+.gallery-heading {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.gallery-heading p {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #718064;
+    margin-bottom: 7px;
+}
+
+.gallery-heading h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 37px;
+    font-weight: normal;
+    color: #52634b;
+}
+
+.polaroid {
+    position: absolute;
+    background-color: #e9d9c8;
+    padding: 9px 9px 45px;
+    cursor: pointer;
+    z-index: 3;
+
+    box-shadow: 0 6px 18px rgba(70, 55, 40, 0.12);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+.polaroid:hover {
+    transform: translateY(-10px) scale(1.04) rotate(0deg);
+    box-shadow: 0 15px 30px rgba(70, 55, 40, 0.2);
+    z-index: 10;
+}
+
+.foto1 {
+    width: 255px;
+    height: 275px;
+    top: 70px;
+    left: 65px;
+    transform: rotate(-3deg);
+}
+
+.foto2 {
+    width: 295px;
+    height: 315px;
+    top: 180px;
+    left: 355px;
+    transform: rotate(2deg);
+}
+
+.foto3 {
+    width: 90px;
+    height: 115px;
+    top: 65px;
+    right: 290px;
+    padding: 6px 6px 25px;
+    transform: rotate(5deg);
+}
+
+.foto4 {
+    width: 180px;
+    height: 190px;
+    top: 65px;
+    right: 65px;
+    transform: rotate(3deg);
+}
+
+.foto5 {
+    width: 170px;
+    height: 190px;
+    bottom: 45px;
+    left: 65px;
+    transform: rotate(2deg);
+}
+
+.foto6 {
+    width: 265px;
+    height: 255px;
+    bottom: 45px;
+    right: 65px;
+    transform: rotate(-2deg);
+}
+
+.foto7 {
+    width: 90px;
+    height: 105px;
+    bottom: 40px;
+    left: 275px;
+    padding: 6px 6px 25px;
+    transform: rotate(-5deg);
+}
+
+
+/*Pop Up Foto*/
+.popup-galeri {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-galeri img {
+    max-width: 85vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 7px solid #fffdf8;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tutup-galeri {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    color: #ffffff;
+    font-size: 38px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1;
+
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tutup-galeri:hover {
+    color: #b49a72;
+    transform: scale(1.15);
+}
+
+.tutup-galeri:focus-visible {
+    outline: 2px solid #b49a72;
+    outline-offset: 5px;
+}
+
+
+/*Halaman 5*/
+.halaman5 {
+    background-color: #f5f0e8;
+    padding: 20px;
+}
+
+.penutup-undangan {
+    position: relative;
+    min-height: 500px;
+    gap: 0;
+    border: 1px solid #8a9a7b;
+    background-color: #fffdf8;
+    padding: 55px 60px;
+}
+
+.judul-terima-kasih {
+    font-family: "Great Vibes", cursive;
+    font-size: 65px;
+    font-weight: normal;
+    color: #52634b;
+    margin-bottom: 15px;
+}
+
+.ornamen-penutup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.ornamen-penutup span:not(.hiasan-tengah) {
+    display: block;
+    width: 65px;
+    height: 1px;
+    background-color: #b49a72;
+}
+
+.hiasan-tengah {
+    font-size: 15px;
+    color: #b49a72;
+}
+
+.pesan-penutup {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #52634b;
+    max-width: 610px;
+    text-align: center;
+}
+
+.pesan-kedua {
+    margin-top: 20px;
+}
+
+.with-love {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    color: #52634b;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.nama-penutup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nama-kecil {
+    font-family: "Great Vibes", cursive;
+    font-size: 36px;
+    font-weight: normal;
+    color: #52634b;
+}
+
+.dan-penutup {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: #52634b;
+}
+
+.footer-penutup {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #718064;
+    margin-top: 35px;
+}

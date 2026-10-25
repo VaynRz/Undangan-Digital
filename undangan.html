@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="undangan.css">
+</head>
+
+<body>
+
+    <main class="slider" id="slider">
+        <section class="halaman halaman1">
+            <div class="kotak-undangan">
+                <p class="judul">THE WEDDING OF</p>
+                <h1>Naruto Uzumaki</h1>
+                <div class="pemisah">
+                    <span></span>
+                    <p class="dan">&</p>
+                    <span></span>
+                </div>
+                <h1>Hinata Hyuga</h1>
+                <p class="tanggal">25 Oktober 2026</p>
+            </div>
+        </section>
+
+
+        <section class="halaman halaman2">
+            <div class="kontainer-halaman2">
+                <div class="judul-halaman2">
+                    <p>THE HAPPY COUPLE</p>
+                    <span></span>
+                </div>
+
+                <div class="profil profil-kiri">
+                    <div class="foto-pengantin">
+                        <img src="naruto.jpg" alt="Foto Naruto">
+                    </div>
+                    <div class="identitas-pengantin">
+                        <h2>Naruto Uzumaki</h2>
+                        <p class="nama-ortu">
+                            Putra dari Bapak Minato Namikaze dan Ibu Kushina Uzumaki
+                        </p>
+                    </div>
+                </div>
+
+                <div class="simbol-tengah">&amp;</div>
+
+                <div class="profil profil-kanan">
+                    <div class="identitas-pengantin">
+                        <h2>Hinata Hyuga</h2>
+                        <p class="nama-ortu">
+                            Putri dari Bapak Hiashi Hyuga dan Ibu ...
+                        </p>
+                    </div>
+                    <div class="foto-pengantin">
+                        <img src="Hinata.jpg" alt="Foto Hinata">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="halaman halaman3">
+            <div class="detail-pernikahan">
+                <h2 class="judul-detail">Save The Date</h2>
+                <div class="ornamen-detail"></div>
+                <div class="tanggal-pernikahan">
+                    <p>Minggu</p>
+                    <h2>25</h2>
+                    <h3>Oktober 2026</h3>
+                </div>
+
+                <div class="pembatas-detail"></div>
+
+                <div class="susunan-acara">
+                    <h3>Akad Nikah</h3>
+                    <p>08.00 - 10.00 WIB</p>
+                </div>
+
+                <div class="pembatas-kecil"></div>
+
+                <div class="susunan-acara">
+                    <h3>Resepsi</h3>
+                    <p>11.00 - 14.00 WIB</p>
+                </div>
+
+                <div class="pembatas-detail"></div>
+
+                <div class="lokasi-pernikahan">
+                    <h3>Gedung Pernikahan</h3>
+                    <p>Gedung Graha UNESA, Surabaya</p>
+                    <button type="button" class="tombol-lokasi" onclick="bukaPeta()">
+                        Lihat Lokasi
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="halaman halaman4">
+            <div class="gallery-container">
+                <div class="gallery-dekor dekor-kiri"></div>
+                <div class="gallery-dekor dekor-kanan"></div>
+
+                <div class="gallery-heading">
+                    <p>SETIAP MOMEN PUNYA CERITA</p>
+                    <h2>Jejak Cinta</h2>
+                </div>
+
+                <div class="polaroid foto1" onclick="bukaFoto(this)">
+                    <img src="foto1.jpg" alt="Momen pengantin 1">
+                </div>
+
+                <div class="polaroid foto2" onclick="bukaFoto(this)">
+                    <img src="foto2.jpg" alt="Momen pengantin 2">
+                </div>
+
+                <div class="polaroid foto3" onclick="bukaFoto(this)">
+                    <img src="foto3.jpg" alt="Momen pengantin 3">
+                </div>
+
+                <div class="polaroid foto4" onclick="bukaFoto(this)">
+                    <img src="foto4.jpg" alt="Momen pengantin 4">
+                </div>
+
+                <div class="polaroid foto5" onclick="bukaFoto(this)">
+                    <img src="foto5.jpg" alt="Momen pengantin 5">
+                </div>
+
+                <div class="polaroid foto6" onclick="bukaFoto(this)">
+                    <img src="foto6.jpg" alt="Momen pengantin 6">
+                </div>
+
+                <div class="polaroid foto7" onclick="bukaFoto(this)">
+                    <img src="foto7.jpg" alt="Momen pengantin 7">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="halaman halaman5">
+            <div class="kotak-undangan penutup-undangan">
+                <h2 class="judul-terima-kasih">Thank You</h2>
+
+                <div class="ornamen-penutup">
+                    <span></span>
+                    <span class="hiasan-tengah">✦</span>
+                    <span></span>
+                </div>
+
+                <p class="pesan-penutup">
+                    Merupakan suatu kebahagiaan dan kehormatan bagi kami
+                    apabila Bapak/Ibu/Saudara/i berkenan hadir
+                    serta memberikan doa restu pada hari bahagia kami.
+                </p>
+                <p class="pesan-penutup pesan-kedua">
+                    Atas perhatian dan doa baik yang diberikan,
+                    kami mengucapkan terima kasih.
+                </p>
+
+                <p class="with-love">With Love,</p>
+
+                <div class="nama-penutup">
+                    <span class="nama-kecil">Naruto</span>
+                    <span class="dan-penutup">&amp;</span>
+                    <span class="nama-kecil">Hinata</span>
+                </div>
+                <p class="footer-penutup">THE WEDDING OF Naruto &amp; Hinata</p>
+            </div>
+        </section>
+    </main>
+
+<!-- Pop up Lokasi -->
+    <div class="popup-peta" id="popupPeta" role="dialog" aria-modal="true" aria-label="Lokasi Pernikahan"
+        aria-hidden="true">
+        <div class="isi-popup">
+            <button class="tutup-popup" type="button" onclick="tutupPeta()">
+                &times;
+            </button>
+
+            <h2>Lokasi Pernikahan</h2>
+            <img src="lokasi.jpeg" alt="Peta lokasi pernikahan">
+
+            <p>Gedung Pernikahan</p>
+            <a href="https://maps.app.goo.gl/Vas6LAnS9wEXkkR38?g_st=aw" target="_blank" rel="noopener noreferrer" class="link-maps">
+                Buka Google Maps
+            </a>
+        </div>
+    </div>
+
+<!-- Pop Up Foto -->
+    <div class="popup-galeri" id="popupGaleri" role="dialog" aria-modal="true" aria-label="Foto galeri"
+        aria-hidden="true">
+        <button class="tutup-galeri" type="button" onclick="tutupFoto()">
+            &times;
+        </button>
+        <img id="gambarPopup" src="" alt="Foto galeri diperbesar">
+    </div>
+
+    <script src="undangan.js"></script>
+
+</body>
+
+</html>
